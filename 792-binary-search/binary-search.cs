@@ -2,7 +2,7 @@ public class Solution {
     public int Search(int[] nums, int target) {
      int low=0;
      int high=nums.Length-1;
-     for(int i=0;i<nums.Length;i++){
+     while(low<=high){
         int mid =(low+high)/2;
 
         if(nums[mid]==target){
